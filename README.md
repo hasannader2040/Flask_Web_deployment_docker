@@ -37,10 +37,7 @@ Follow these steps to set up and run the project locally:
 
    ```bash
    git clone https://github.com/hasannader2040/Flask_Web_deployment_docker.git
- ```
-
-
-
+ ``
 
 2- **Navigate to the project directory:**
 
@@ -59,53 +56,65 @@ This command will create a Docker image named flask-docker-app based on the inst
 Running the Application
 To run the Docker container, use the following command:
 
-bash
-Copy code
+ ```bash
 docker run -p 5000:5000 flask-docker-app
+ ```
+
 The -p 5000:5000 flag maps port 5000 inside the Docker container to port 5000 on your local machine. You can access the Flask web application by navigating to http://localhost:5000 in your web browser.
-Usage
+
+## Usage
+
 Here are some examples of how to use the Flask Web Application with Docker:
 
-Access the Flask Web Application:
+1- **Access the Flask Web Application:**
 
 Open a web browser and navigate to:
 
-
+ ```bash
 http://localhost:5000
+ ```
+
+
 You should see the homepage of the Flask application.
 
-Stopping the Docker Container:
+2- **Stopping the Docker Container:**
 
 To stop the running container, you can press CTRL + C in the terminal where the Docker container is running. Alternatively, use the following commands:
 
-bash
-Copy code
+ ```bash
 docker ps  # List running containers to get the container ID
 docker stop <container_id>
-Removing the Docker Container:
+ ```
+
+3- **Removing the Docker Container:**
 
 After stopping the container, you can remove it using:
 
-bash
-Copy code
+ ```bash
 docker rm <container_id>
+ ```
+
 This step is optional but helps to clean up your Docker environment.
 
-Tools and Technologies
+
+## Tools and Technologies
 This project utilizes the following tools and technologies:
 
-Flask: A lightweight WSGI web application framework in Python.
-Docker: To create, deploy, and run the Flask application inside containers.
-Python: The core language used for developing the Flask application.
-Contributing
+**Flask:** A lightweight WSGI web application framework in Python.
+**Docker:** To create, deploy, and run the Flask application inside containers.
+**Python:** The core language used for developing the Flask application.
+
+## Contributing
 Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/your-feature-name).
-Open a pull request.
-License
+1- Fork the repository.
+2- Create a new branch (git checkout -b feature/your-feature-name).
+3- Make your changes and commit them (git commit -m 'Add some feature').
+4- Push to the branch (git push origin feature/your-feature-name).
+5- Open a pull request.
+
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 
